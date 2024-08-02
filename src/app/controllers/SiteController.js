@@ -1,5 +1,6 @@
 const Course = require('../models/Course');
 const { mutipleMongooseToObject } = require('../../util/mongoose');
+
 class SiteController {
     //[GET] /home
     async index(req, res, next) {
@@ -17,7 +18,6 @@ class SiteController {
                 });
             })
             .catch(next);
-        //res.render('home');
     }
 
     //[GET] /search
